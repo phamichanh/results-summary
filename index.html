@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+  <div class="container container--shadow">
+    <div class="result container__item">
+      <h2 class="result__title">Your Result</h2>
+      <div class="result__score">
+        <div class="score-circle">
+          <p class="score-circle__value">76</p>
+          <p class="score-circle__max-value">of 100</p>
+        </div>
+      </div>
+
+      <div class="result__comment">
+        <h1>Great</h1>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+
+    <div class="summary container__item">
+      <h3 class="summary__title">Summary</h3>
+
+      <div class="summary__score-detail">
+        <div class="score-item score-item--red">
+          <p class="score-item__name">Reaction</p>
+          <p class="score-item__value">80 / 100</p>
+        </div>
+
+        <div class="score-item score-item--yellow">
+          <p class="score-item__name">Memory</p>
+          <p class="score-item__value">92 / 100</p>
+        </div>
+
+        <div class="score-item score-item--green">
+          <p class="score-item__name">Verbal</p>
+          <p class="score-item__value">61 / 100</p>
+        </div>
+
+        <div class="score-item score-item--blue">
+          <p class="score-item__name">Visual</p>
+          <p class="score-item__value">72 / 100</p>
+        </div>
+      </div>
+  
+      <button type="button" class="summary__btn-continue">Continue</button>
+    </div>
+  </div>
+</body>
+</html>
