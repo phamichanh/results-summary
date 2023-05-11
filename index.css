@@ -27,11 +27,11 @@ body {
   box-sizing: border-box;
   border-radius: 30px;
   width: 370px;
+  padding: 36px;
 }
 
 .result {
   background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  padding: 36px;
   text-align: center;
 }
 
@@ -76,18 +76,92 @@ body {
   color: hsl(241, 100%, 89%);
 }
 
-/* .score-circle p {
+.summary__title {
   margin: 0;
+  margin-bottom: 32px;
+  color: hsl(224, 30%, 27%);
 }
 
-.result__comment h2 {
-  margin: 0;
-  margin-bottom: 24px;
+.score-item {
+  height: 54px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-weight: bold;
 }
 
-.result__comment p {
-  margin: 0;
-} */
+.score-item--red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.score-item--yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.score-item--green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.score-item--blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.score-item__name {
+  display: flex;
+}
+
+.score-item__name-icon {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.score-item__name-icon--reaction {
+  background-image: url(assets/images/icon-reaction.svg);
+}
+
+.score-item__name-icon--memory {
+  background-image: url(assets/images/icon-memory.svg);
+}
+
+.score-item__name-icon--verbal {
+  background-image: url(assets/images/icon-verbal.svg);
+}
+
+.score-item__name-icon--visual {
+  background-image: url(assets/images/icon-visual.svg);
+}
+.score-item__value {
+  color: hsl(224, 30%, 27%);
+}
+
+.score-item__max-value {
+  color: grey;
+}
+
+.summary__btn-continue {
+  width: 100%;
+  height: 56px;
+  margin-top: 20px;
+  border-radius: 28px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.summary__btn-continue:hover {
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
 
 /*
 - Light red: hsl(0, 100%, 67%)
