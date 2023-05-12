@@ -83,7 +83,6 @@ body {
 }
 
 .score-item {
-  height: 54px;
   margin-bottom: 20px;
   border-radius: 12px;
   display: flex;
@@ -139,6 +138,7 @@ body {
 .score-item__name-icon--visual {
   background-image: url(assets/images/icon-visual.svg);
 }
+
 .score-item__value {
   color: hsl(224, 30%, 27%);
 }
@@ -163,24 +163,72 @@ body {
   background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-/*
-- Light red: hsl(0, 100%, 67%)
-- Orangey yellow: hsl(39, 100%, 56%)
-- Green teal: hsl(166, 100%, 37%)
-- Cobalt blue: hsl(234, 85%, 45%)
+@media only screen and (max-width: 779px) {
+  body {
+    margin: 0;
+  }
 
-## Gradients
+  .container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    flex-direction: column;
+    border-radius: 0;
+  }
 
-- Light slate blue (background): hsl(252, 100%, 67%)
-- Light royal blue (background): hsl(241, 81%, 54%)
+  .container--shadow {
+    box-shadow: none;
+  }
 
-- Violet blue (circle): hsla(256, 72%, 46%, 1)
-- Persian blue (circle): hsla(241, 72%, 46%, 0)
+  .container__item {
+    width: 100%;
+  }
 
-### Neutral
+  .result {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 
-- White: hsl(0, 0%, 100%)
-- Pale blue: hsl(221, 100%, 96%)
-- Light lavender: hsl(241, 100%, 89%)
-- Dark gray blue: hsl(224, 30%, 27%)
-*/
+  .result__title {
+    font-size: 18px;
+  }
+
+  .score-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .score-circle__value {
+    font-size: 52px;
+  }
+
+  .score-circle__max-value {
+    font-size: 14px;
+  }
+
+  .result__comment h1 {
+    font-size: 22px;
+  }
+
+  .result__comment p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .summary__title {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .score-item {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .summary__btn-continue {
+    margin-top: 10px;
+  }
+}
